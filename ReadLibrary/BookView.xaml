@@ -1,0 +1,182 @@
+﻿<Window x:Class="ReadLibrary.BookView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReadLibrary"
+        mc:Ignorable="d"
+        Title="BookView" Height="557" Width="800">
+
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="59*"></ColumnDefinition>
+                    <ColumnDefinition Width="15*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+
+                <StackPanel Orientation="Vertical" Grid.Column="0">
+                    <TextBlock Text="Create Book" Margin="20" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text = "Title : " Width = "30" Height = "20" Margin = "5, 10, 5, 10" />
+                        <TextBlock x:Name = "Title" Width = "470" Height = "20" Margin = "5" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text = "Author Name :" Width = "80" Height = "20" Margin = "5, 10, 5, 10" />
+                        <TextBlock x:Name = "AuthorName" Width = "420" Height = "20" Margin = "5" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  Text = "Rating out of 10 :" Width = "100" Height = "20" Margin = "5, 10, 5, 10" />
+                        <TextBlock x:Name="Rating" Width = "90" Height = "20" Margin = "5" />
+                        <TextBlock Text = "Genre :" Width = "50" Height = "20"/>
+                        <TextBlock  x:Name="Genre" Width = "140" Height = "20"/>
+                        <TextBlock Text = " Series :" Width = "52" Height="20" />
+                        <TextBlock x:Name="IsSeries" Width="20" Height="20"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text = "Series Name :" Width = "80" Height = "20" Margin = "30,10,5,10" />
+                        <TextBlock x:Name="SeriesName" Width = "395" Height = "20" Margin = "5" />
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <Button Margin = "5" Content = "Add Book" Height = "150">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical"  Grid.Row="1"  Grid.ColumnSpan="2">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text = "Official Description : " Width = "110" Height = "20" Margin = "5" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="OfficialDescription" Width = "520"  Margin = "5"  TextWrapping="Wrap"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text = "Personal Description : " Width = "115" Height = "20" Margin = "0, 5, 5, 5" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="PersonalDescription" Width = "520" Margin = "5"  TextWrapping="Wrap"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text = "Likes and Dislikes : " Width = "110" Height = "20" Margin = "5" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="LikesDislikes" Width = "520"  Margin = "5"  TextWrapping="Wrap"/>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text = "Categories : " Width = "90" Height = "20" Margin  = "5"/>
+                        <!--Categories Here-->
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel x:Name="CategriesPanel" Orientation="Vertical" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                    <TextBlock Text="Categories" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"/>
+                    <!-- Now here's the space for the categories.... YAY MORE BEHIND CODE ADD IN ELEMENTS-->
+                    <StackPanel x:Name="Category1" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category2" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category3" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category4" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category5" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category6" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category7" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category8" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category9" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category10" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category11" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category12" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category13" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category14" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category15" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category16" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category17" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                    <StackPanel x:Name="Category18" Orientation="Horizontal">
+
+                    </StackPanel>
+
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                    <Button Margin="5" Content="Edit Book" Click="EditBook_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Margin="5" Content="Delete Book" Click="DeleteBook_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Margin="5" Content="Cancel" Click="Cancel_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

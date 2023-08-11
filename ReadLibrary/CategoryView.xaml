@@ -1,0 +1,53 @@
+﻿<Window x:Class="ReadLibrary.CategoryView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReadLibrary"
+        mc:Ignorable="d"
+        Title="CategoryView" Height="460" Width="800">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid x:Name = "FormLayoutGrid" Background = "DarkGray">
+            <StackPanel Orientation="Vertical" x:Name="MainPageStackPanel">
+                <StackPanel Orientation="Horizontal">
+                    <Button Margin="10" Content="Add Book" Click="Add_Book_Click" Width="100">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5" />
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Margin="10" Content="Add Cateogry" Click="Add_Category_Click" Width="100">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Margin="10" Content="View Library" Click="LibraryView_Click" Width="100">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+                
+                <TextBlock Text="Categories" Margin="10" HorizontalAlignment="Center"/>
+
+                <StackPanel Orientation="Horizontal" x:Name="Row1">
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" x:Name="Row2">
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" x:Name="Row3">
+
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

@@ -1,0 +1,29 @@
+{
+  "Title_BI": "Harry Potter and The Sorcerer's Stone",
+  "AuthorName_BI": "J. K. Rowling",
+  "Rating_BI": "9",
+  "Series_BI": true,
+  "SeriesName_BI": "",
+  "OfficialDescription_BI": "??????",
+  "PersonalDescription_BI": "Bullied and abused kid finds out why and gets to learn magic plus fight evil wizard also teacher hates harry so he MUST be evil.",
+  "LikesDislikes_BI": "WHY did he have to go to the dursleys... protection magic is not worth the torment he got there",
+  "fileName_BI": "Harry Potter and The Sorcerer's Stone.json",
+  "categories_BI": [
+    {
+      "Item1": "Genre",
+      "Item2": "Miscellaneous"
+    },
+    {
+      "Item1": "Janes Favorites",
+      "Item2": "Miscellaneous"
+    },
+    {
+      "Item1": "Mood",
+      "Item2": "Miscellaneous"
+    },
+    {
+      "Item1": "Series",
+      "Item2": "Miscellaneous"
+    }
+  ]
+}
